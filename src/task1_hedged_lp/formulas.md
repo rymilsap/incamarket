@@ -99,6 +99,3 @@ Where:
 - **P**: ETH price in USDT
 - **L**: V3 liquidity amount
 - **P₀**: Entry price
-
-
-
