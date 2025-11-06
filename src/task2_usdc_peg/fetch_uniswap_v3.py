@@ -14,7 +14,9 @@ from utils import (
     round_to_hour, is_outside_band, save_to_parquet, create_temp_dir
 )
 
-GRAPH_URL = "https://gateway.thegraph.com/api/ea4eb1e837994a4f8c3490679e97af5e/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV"
+# Get your free API key from https://thegraph.com/studio/
+GRAPH_API_KEY = "YOUR_API_KEY_HERE"  # Replace with your key
+GRAPH_URL = f"https://gateway.thegraph.com/api/{GRAPH_API_KEY}/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV"
 POOL_ADDRESS = "0x3416cf6c708da44db2624d63ea0aaef7113527c6"
 START_TIMESTAMP = int(datetime(2025, 7, 1, tzinfo=timezone.utc).timestamp())
 END_TIMESTAMP = int(datetime(2025, 9, 30, 23, 59, 59, tzinfo=timezone.utc).timestamp())
